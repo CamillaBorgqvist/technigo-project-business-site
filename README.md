@@ -1,3 +1,3 @@
 # Business Site
 
-(https://business-homeofevents.netlify.app/)
+https://business-homeofevents.netlify.app/
