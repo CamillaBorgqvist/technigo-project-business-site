@@ -3,15 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Business Site</title>
-    <!-- Don't forget to link the CSS file here! -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Business name 🌻</h1>
-
-    <!-- Video or image as a header is cool :) -->
-
-    <!-- Signup form -->
-
+    <header class="header">
+      <div class="rubrik">
+        <h1>Home of events</h1>
+      </div>
+      <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#join">Join</a>
+        <a href="#contact">Contact</a>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="video-section">
+        <video autoplay loop muted id="about">
+          <source src="assets/3188991-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">
+        <h1>An agency for all events</h1>
+        <h3>We make it easy for you so you can relax and enjoy. <br> From the small team gathering to the big company kick-off.</h3>
+        </div>
+      </div>
+      <section class="product-section" id="products">
+        <section class="product-card">
+          <img src="assets/team.jpg" alt="Team working together">
+          <h3>Team building</h3>
+          <p>For new and old teams, a team-building activity is always a great way to kick off the term.</p>
+          <a href="#join" class="button">More info</a>
+        </section>
+        <section class="product-card">
+          <img src="assets/dinner.jpg" alt="Dinner table">
+          <h3>Get together</h3>
+          <p>We’ll help you put together a dinner tailored to your wishes — at the office or off-site.</p>
+          <a href="#join" class="button">More info</a>
+        </section>
+        <section class="product-card">
+          <img src="assets/party.jpg" alt="Wimen at party">
+          <h3>Kick-off</h3>
+          <p>Here, there are no limits — themed parties, dinner entertainment, live bands — you name it.</p>
+          <a href="#join" class="button">More info</a>
+        </section>
+      </section>
+        <form action="http://httpbin.org/anything" method="POST" id="join">
+          <h3>Type your information and what event you want more information about.</h3>
+          <fieldset>
+            <label class="label-text">
+              <span>Name</span>
+              <input type="text" name="name" requider placeholder="First name Last name" required>
+            </label>
+            <label class="label-text">
+              <span>Company</span>
+              <input type="text" name="company" requider placeholder="Company name">
+            </label>
+            <label class="label-text">
+              <span>City</span>
+              <input type="text" name="City" requider placeholder="City your located">
+            </label>
+            <label class="label-text">
+              <span>Email</span>
+              <input type="email" name="email" requider placeholder="firstname@yourmail.com" required>
+            </label>
+            <label class="label-option">
+              <input type="checkbox" name="checkbox" value="Team building"> Team Building
+            </label>
+            <label class="label-option">
+              <input type="checkbox" name="checkbox" value="Get together"> Get together
+            </label>
+            <label class="label-option">
+              <input type="checkbox" name="checkbox" value="Kick off"> Kick-off
+            </label>
+          </fieldset>
+          <button type="submit">Send</button>
+        </form>
+    </main> 
+    <footer>
+      <div class="footer" id="contact"> 
+        <h4>Home of events</h4>
+      <nav class="contact">
+        <a target="_blank" href="mailto:camilla.borgqvist@hotmail.com">Contact</a>
+        <a target="_blank" href="https://www.linkedin.com/in/camilla-borgqvist-99270b52/">Linkedin</a>
+      </nav>
+      </div>
+    </footer> 
   </body>
 </html>

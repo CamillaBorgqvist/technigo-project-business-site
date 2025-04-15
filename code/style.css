@@ -1,5 +1,188 @@
-/* After you've linked the CSS file in the HTML,
-this should turn the background blue ;) */
 body {
-  background: blue;
+  background: rgba(232, 213, 189, 0.5);
+}
+.header{
+ background-color: rgba(232, 213, 189, 0.7);
+ margin-top: 1rem;
+}
+.rubrik h1{
+  color:white;
+  padding-top: 2rem;
+  font-size: 35px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.navbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+@media(min-width:800px){ /*change the position of navbar*/
+  .navbar{
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+}
+.navbar a{
+  text-decoration:none;
+  color:rgb(100, 75, 44);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5rem;
+}
+.video-section {
+  position:relative;
+  height: 35vh;
+  width: 100%;
+  margin-top:1rem;
+  overflow: hidden;
+}
+@media(min-width:1025px){
+  .video-section{
+    height:50vh;
+  }
+}
+.video-section video{
+  position:absolute;
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.video-text{
+  z-index: 1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+  margin-top: 2.5rem;
+}
+.video-text h3{
+  margin-top: 0;
+}
+@media(min-width:342px){
+  .video-text h3{
+    text-align: center;
+}
+}
+.product-section{
+display:flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top:2rem;
+margin-bottom: 1rem;
+}
+.product-card{
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 213, 189, 0.5);
+  margin-bottom: 2rem;
+  max-width: 17rem;
+}
+.product-card img{
+  width: 70%;
+  height:70%;
+  object-fit:cover;
+  border-radius: 0.5rem;
+}
+.product-card h3{
+  color:rgb(100, 75, 44);
+}
+.product-card p{
+  color:rgb(100, 75, 44);
+  font-family: Arial, Helvetica, sans-serif;
+}
+form{
+  border:1px solid rgba(232, 213, 189, 0.5);
+  border-radius: 0.5rem;
+  padding:1rem;
+  box-shadow: 0 2px 4px rgba(232, 213, 189, 0.5);
+  max-width: 31rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+form h3{
+  color:rgb(100, 75, 44);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+fieldset{
+  border: none;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.label-text{
+  display:flex;
+  align-items: center;
+}
+.label-option{
+  display: flex;
+  margin-top: 0.5rem;
+  color:rgb(100, 75, 44);
+  justify-content: flex-start;
+}
+span{
+  width: 30%;
+  text-align: right;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  color:rgb(100, 75, 44);
+}
+input{
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  outline: none;
+}
+input[type=checkbox] {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border: 2px solid rgb(100, 75, 44);
+  position: relative;
+  accent-color: rgb(100, 75, 44);
+}
+button { /*button in the form*/
+  padding: 0.6rem 1rem;
+  background-color: rgb(100, 75, 44);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.button { /*the buttons in the product section*/
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: rgb(100, 75, 44);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.footer{
+  background-image: url(assets/glascheer.jpg);
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.footer h4{
+  color: rgb(100, 75, 44);
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.footer a{
+  text-decoration: none;
+  color:rgb(100, 75, 44);
 }
